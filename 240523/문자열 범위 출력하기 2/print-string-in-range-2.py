@@ -1,9 +1,10 @@
 word = input()
 n = int(input())
 
-for i in range(n):
-    if n > len(word):
-        for i in range(len(word), -1, -1):
-            print(word[-(i+1)], end='')
-    else:
+
+if n > len(word):
+    for i in range(len(word), -1, -1):
+        print(word[-(i+1)], end='')
+else:
+    for i in range(n):
         print(word[-(i+1)], end='')
