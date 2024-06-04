@@ -13,7 +13,7 @@ for i in q_list:
         s_list[int(i[1]) - 1] = t2
         s_list[int(i[2]) - 1] = t1
         print(''.join(s_list))
-    elif i[0] == '2':
+    else:
         for idx, j in enumerate(s_list):
             if j == i[1]:
                 s_list[idx] = i[2]
