@@ -1,15 +1,13 @@
 s = input()
-a = 0
-b = 0
-idx = 0
 
-while 'ee' in s[idx:]:
-    idx = s.find('ee') + 1
-    a += 1
+length = len(s)
+cnt1 = 0
+cnt2 = 0
 
-idx = 0
-while 'eb' in s[idx:]:
-    idx = s.find('eb') + 1
-    b += 1
+for i in range(0, length-1):
+    if s[i] == 'e' and s[i+1] == 'e':
+        cnt1 += 1
+    if s[i] == 'e' and s[i+1] =='b':
+        cnt2 += 1
 
-print(a, b)
+print(cnt1, cnt2)
