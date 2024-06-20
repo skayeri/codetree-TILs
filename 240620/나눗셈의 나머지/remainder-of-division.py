@@ -3,11 +3,9 @@ l = []
 m = a
 answer = 0
 
-while m > 1:
+while m >= 1:
     l.append(int(m % b))
     m /= b
-    continue
-
 arr = [0] * len(l)
 
 for i in l:
