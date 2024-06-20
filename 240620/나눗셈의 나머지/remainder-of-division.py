@@ -1,18 +1,13 @@
 a, b = map(int, input().split())
-l = []
+l = [0] * 10
 m = a
 answer = 0
 
 while m > 1:
-    l.append(int(m % b))
+    l[int(m % b)] += 1
     m //= b
 
-arr = [0] * len(l)
-
-for i in l:
-    arr[i] += 1
-
-for j in arr:
+for j in l:
     answer += j**2
 
 print(answer)
