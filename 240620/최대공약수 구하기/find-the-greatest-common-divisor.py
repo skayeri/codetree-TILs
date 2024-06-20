@@ -1,4 +1,4 @@
-n, m = map(int, input().split())
+a, b = map(int, input().split())
 
 def max_comm(n, m):
     for i in range(1, min(n, m)):
@@ -6,4 +6,4 @@ def max_comm(n, m):
             ans = i
     print(ans)
     
-max_comm(n, m)
+max_comm(a, b)
