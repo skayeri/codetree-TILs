@@ -11,7 +11,7 @@ arr = [0] * len(l)
 for i in l:
     arr[i] += 1
 
-# for j in arr:
-#     answer += j**2
+for j in arr:
+    answer += j*j
 
 print(answer)
