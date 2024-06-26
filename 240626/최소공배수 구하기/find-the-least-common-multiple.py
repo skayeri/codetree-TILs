@@ -3,7 +3,7 @@ def function(x, y):
     k = []
     for i in range(1, y + 1):
         l.append(x * i)
-    for j in range(1, y + 1):
+    for j in range(1, x + 1):
         k.append(y * j)
     for q in l:
         if q in k:
