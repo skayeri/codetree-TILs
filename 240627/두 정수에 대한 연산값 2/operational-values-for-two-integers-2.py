@@ -1,6 +1,10 @@
 def cal(x, y):
-    X = min(x, y) + 10
-    Y = max(x, y) * 2
+    if x < y:
+        X = x + 10
+        Y = y * 2
+    else:
+        X = x * 2
+        Y = y + 10
     return X, Y
 
 a, b = map(int, input().split())
