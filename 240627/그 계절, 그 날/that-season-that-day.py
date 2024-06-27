@@ -20,7 +20,7 @@ def season(y, m, d):
     
     if m in [1, 3, 5, 7, 8, 10, 12]:
         last_day = 31
-    elif m in [4, 5, 6, 9, 11]:
+    elif m in [4, 6, 9, 11]:
         last_day = 30
 
     if d <= last_day:
