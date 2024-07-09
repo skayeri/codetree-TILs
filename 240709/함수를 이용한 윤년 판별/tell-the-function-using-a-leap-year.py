@@ -5,5 +5,6 @@ def is_yun(x):
         return 'false'
     if x % 4 == 0:
         return 'true'
+    return 'false'
 
 print(is_yun(y))
