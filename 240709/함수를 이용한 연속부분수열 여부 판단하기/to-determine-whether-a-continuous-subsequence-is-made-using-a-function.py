@@ -3,7 +3,7 @@ a = list(input().split())
 b = list(input().split())
 
 def cont(a, b):
-    if n1 < n2:
+    if len(a) < len(b):
         return 'No'
     else:
         start = 0
