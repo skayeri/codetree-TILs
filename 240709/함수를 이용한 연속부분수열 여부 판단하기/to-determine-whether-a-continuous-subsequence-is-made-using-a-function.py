@@ -13,7 +13,7 @@ def cont(a, b):
         try:
             temp.append(a[start + j])
         except:
-            print('No')
+            return 'No'
     if temp == b:
         print('Yes')
     else:
