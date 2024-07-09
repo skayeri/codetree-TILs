@@ -2,24 +2,21 @@ n1, n2 = map(int, input().split())
 a = list(input().split())
 b = list(input().split())
 
-def cont(a, b):
-    if len(a) < len(b):
-        return 'No'
-    else:
-        start = 0
-        for i in range(n1):
-            if a[i] == b[0]:
-                start = i
-                break
-        temp = []
-        for j in range(n2):
-            try:
-                temp.append(a[start + j])
-            except:
-                return 'No'
-        if temp == b:
-            print('Yes')
-        else:
-            print('No')
+def is_same(n):
+    for i in range(n2):
+        if a[i + n] != b[i]:
+            return False
+    
+    return True
 
-cont(a, b)
+def is_subsequence():
+    for i in range(n1 - n2 + 1):
+        if is_same(i):
+            return True
+
+    return False
+
+if is_subsequence():
+    print('Yes')
+else:
+    print('No')
