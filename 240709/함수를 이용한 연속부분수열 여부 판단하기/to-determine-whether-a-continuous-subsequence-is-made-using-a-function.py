@@ -5,20 +5,21 @@ b = list(input().split())
 def cont(a, b):
     if n1 <= n2:
         return 'No'
-    start = 0
-    for i in range(n1):
-        if a[i] == b[0]:
-            start = i
-            break
-    temp = []
-    for j in range(n2):
-        try:
-            temp.append(a[start + j])
-        except:
-            return 'No'
-    if temp == b:
-        print('Yes')
     else:
-        print('No')
+        start = 0
+        for i in range(n1):
+            if a[i] == b[0]:
+                start = i
+                break
+        temp = []
+        for j in range(n2):
+            try:
+                temp.append(a[start + j])
+            except:
+                return 'No'
+        if temp == b:
+            print('Yes')
+        else:
+            print('No')
 
 cont(a, b)
