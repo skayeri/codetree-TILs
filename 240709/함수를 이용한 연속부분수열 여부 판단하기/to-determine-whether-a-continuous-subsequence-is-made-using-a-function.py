@@ -3,6 +3,8 @@ a = list(input().split())
 b = list(input().split())
 
 def cont(a, b):
+    if n1 <= n2:
+        return 'No'
     start = 0
     for i in range(n1):
         if a[i] == b[0]:
