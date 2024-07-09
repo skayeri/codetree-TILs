@@ -10,10 +10,13 @@ def cont(a, b):
             break
     temp = []
     for j in range(n2):
-        temp.append(a[start + j])
+        try:
+            temp.append(a[start + j])
+        except:
+            print('No')
     if temp == b:
         print('Yes')
     else:
         print('No')
-        
+
 cont(a, b)
