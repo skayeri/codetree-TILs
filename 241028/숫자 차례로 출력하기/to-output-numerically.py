@@ -3,19 +3,17 @@ def number_asc(n):
         return
 
     number_asc(n-1)
-    if n == m:
-       print(n)
-    else:
-        print(n, end=" ")
+    print(n, end=" ")
 
 def number_desc(n):
     if n == 0:
         return
- 
+
     print(n, end=" ")
     number_desc(n-1)
     
-m = int(input())
+n = int(input())
 
-number_asc(m)
-number_desc(m)
+number_asc(n)
+print()
+number_desc(n)
