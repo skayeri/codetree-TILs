@@ -14,8 +14,6 @@ def lcm(a, b):
 def sol(arr, n):
     if len(arr) == 1:
         return arr[0]
-    if len(arr) == 2:
-        return lcm(arr[0], arr[1])
     return lcm(arr[n-1], sol(arr[:n-1], n - 1))
 
 print(sol(arr, n))
