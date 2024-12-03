@@ -4,10 +4,9 @@ n, k = tuple(map(int, (n, k)))
 arr = [input() for _ in range(n)]
 arr.sort()
 
+num = 0
 for el in arr:
-    if el[:len(T)] == T:
-        continue
-    else:
-        arr.remove(el)
-
-print(arr[k-1])
+    if el.startswith(T):
+        num += 1
+        if num == k:
+            print(el)
